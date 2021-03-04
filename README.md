@@ -1,1 +1,1 @@
-# 63eggplants.github.io/responsive_web_clone
+#responsive_web_clone
