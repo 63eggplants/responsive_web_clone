@@ -1,0 +1,385 @@
+:root {
+  --yellow: #f1cf69;
+  --grey: #37353c;
+  --white: #ffffff;
+  --black: #302e34;
+
+  --font-size-medium: 1.6rem;
+  --font-size-small: 1rem;
+  --font-size-title: 2.5rem;
+
+  --roboto: "Roboto", sans-serif;
+  --pacifico: "Pacifico", cursive;
+  --ubuntu: "Ubuntu", sans-serif;
+
+  --side-padding: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ubuntu);
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  font-family: var(--roboto);
+}
+
+.top {
+  background-image: url("image/background1.jpeg");
+  background-color: var(--grey);
+  background-blend-mode: exclusion;
+  background-size: cover;
+  color: var(--white);
+  padding: 2% 5% 8% 6%;
+}
+
+.top .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.top .nav .name {
+  font-size: var(--font-size-title);
+  font-family: var(--pacifico);
+}
+
+.top .nav .name i {
+  color: var(--yellow);
+  padding-right: 0.6rem;
+}
+
+.top .nav .nav_menu {
+  display: flex;
+  margin-top: 3%;
+}
+
+.top .nav .nav_menu li {
+  border-right: 0.0625rem var(--white) solid;
+  padding: 0 var(--side-padding);
+}
+
+.top .slogan {
+  margin: 20% 0% 10% 10%;
+}
+.top .slogan .subtitle {
+  font-family: var(--roboto);
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.top .slogan .info {
+  font-size: 1.5rem;
+}
+
+.about {
+  background-color: var(--yellow);
+  color: var(--white);
+  padding: 3% 5% 8% 6%;
+}
+
+.about .title {
+  font-family: var(--pacifico);
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.about .info {
+  display: flex;
+  margin-top: 5%;
+}
+
+.about .info .items {
+  margin-right: 1.5rem;
+}
+
+.about .info img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about .info .theme {
+  font-size: var(--font-size-medium);
+  font-weight: bolder;
+  margin: 1em 0;
+}
+
+.about .info .contents {
+  font-size: var(--font-size-small);
+  margin-bottom: 4em;
+}
+
+.about .info .morebtn {
+  color: var(--white);
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 0.25rem var(--white) solid;
+  padding: 1rem 1.75rem;
+  transition: all 0.5s;
+  transition-timing-function: ease;
+}
+
+.about .info .morebtn:hover {
+  color: var(--yellow);
+  background: var(--white);
+  border: none;
+}
+
+.service {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+.service .main {
+  padding: 0% 5% 8% 6%;
+}
+
+.service svg {
+  height: 2.5rem;
+  width: 100%;
+}
+
+.service .title {
+  font-family: var(--pacifico);
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.service .info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.service .info .items {
+  margin-right: 3%;
+}
+
+.service .info .items .icons {
+  color: var(--yellow);
+  font-size: 8rem;
+  padding-left: 2%;
+}
+
+.service .info .items .theme {
+  font-size: var(--font-size-medium);
+  font-weight: bolder;
+  margin: 1em 0;
+}
+
+.service .info .items .contents {
+  font-size: var(--font-size-small);
+  margin-bottom: 4em;
+}
+
+.service .info .items .morebtn {
+  color: var(--yellow);
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 0.25rem var(--yellow) solid;
+  padding: 1rem 1.75rem;
+  transition: all 0.5s;
+  transition-timing-function: ease;
+}
+
+.service .info .items .morebtn:hover {
+  color: var(--grey);
+  background: var(--yellow);
+}
+.introduce {
+  background-image: url("image/background2.jpeg");
+  background-color: var(--grey);
+  background-blend-mode: exclusion;
+  background-size: cover;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.introduce .main {
+  padding: 3% 5% 8% 6%;
+}
+
+.introduce .title {
+  font-size: var(--font-size-title);
+  font-family: var(--pacifico);
+  margin-bottom: 1em;
+}
+
+.introduce .title i {
+  color: var(--yellow);
+  padding-right: 0.6rem;
+}
+
+.introduce .subtitle {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+}
+
+.introduce .contents {
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  column-count: 2;
+  column-gap: 3rem;
+  line-height: 1.5em;
+  margin-bottom: 4em;
+}
+
+.introduce .contents p {
+  margin-bottom: 1em;
+}
+
+.introduce .morebtn {
+  color: var(--yellow);
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 0.25rem var(--yellow) solid;
+  padding: 1rem 1.75rem;
+  transition: all 0.5s;
+  transition-timing-function: ease;
+}
+
+.introduce .morebtn:hover {
+  color: var(--grey);
+  background: var(--yellow);
+}
+.introduce svg {
+  transform: rotateX(180deg);
+  height: 2.5rem;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 5% 8% 6%;
+}
+
+.footer .nameAndauthor .name {
+  font-size: var(--font-size-title);
+  font-family: var(--pacifico);
+  font-weight: lighter;
+}
+
+.footer .nameAndauthor .name i {
+  color: var(--yellow);
+  padding-right: 0.6rem;
+}
+
+.footer .address {
+  font-style: normal;
+  line-height: 1.5em;
+  padding-top: 2%;
+}
+
+.footer .contacts {
+  padding-right: 3%;
+}
+
+.footer .contacts .email {
+  margin-bottom: 2em;
+}
+.footer .contacts input,
+.footer .contacts button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.footer .contacts input {
+  border-bottom: 0.0625rem solid var(--grey);
+  padding-bottom: 0.3em;
+  margin-right: 1em;
+}
+
+.footer .contacts button {
+  font-family: var(--ubuntu);
+  font-size: var(--font-size-title);
+  font-weight: 900;
+}
+
+.footer .contacts button:hover {
+  cursor: pointer;
+}
+
+.footer .contacts .icons {
+  display: flex;
+}
+
+.footer .contacts .icons li {
+  color: var(--yellow);
+  margin-right: 2em;
+}
+
+@media screen and (max-width: 1025px) {
+  .top .nav {
+    flex-direction: column;
+  }
+
+  .service .info {
+    flex-wrap: wrap;
+  }
+
+  .service .info .items {
+    flex: 1 1 40%;
+    text-align: center;
+    padding-bottom: 3em;
+  }
+
+  .introduce .subtitle {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top .slogan {
+    text-align: center;
+    margin: 30% 0;
+  }
+  .top .slogan .subtitle {
+    font-size: 5vw;
+  }
+
+  .about .info {
+    flex-direction: column;
+  }
+
+  .about .info .items {
+    padding-bottom: 3em;
+  }
+
+  .service .info {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .nameAndauthor,
+  .footer .address {
+    margin: 1em;
+  }
+
+  .footer .contacts {
+    padding-right: 0%;
+  }
+  .footer .contacts .icons {
+    justify-content: center;
+  }
+}
