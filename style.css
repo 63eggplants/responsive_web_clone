@@ -383,3 +383,41 @@ a:visited {
     justify-content: center;
   }
 }
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .top .slogan {
+    text-align: center;
+    margin: 30% 0;
+  }
+  .top .slogan .subtitle {
+    font-size: 5vw;
+  }
+
+  .about .info {
+    flex-direction: column;
+  }
+
+  .about .info .items {
+    padding-bottom: 3em;
+  }
+
+  .service .info {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .nameAndauthor,
+  .footer .address {
+    margin: 1em;
+  }
+
+  .footer .contacts {
+    padding-right: 0%;
+  }
+  .footer .contacts .icons {
+    justify-content: center;
+  }
+}
